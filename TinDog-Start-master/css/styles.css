@@ -2,16 +2,39 @@
 
 body {
     font-family: "Montserrat";
+    text-align: center;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+h2 {
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
+
+    line-height: 3.5rem;
+}
+h3 {
+    font-weight: bold;
+}
+.header {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
 }
 
 .container-fluid {
     /* 3% top and bottom 15% left and right */
-    padding: 3% 15%;
+    padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+.white-section{
+    background-color: #fff;
 }
 
 
@@ -41,40 +64,31 @@ body {
 }
 
 /* Title-image */
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+}
 .title-image {
-    width: 60%;
+    width: 18%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 23%;
 }
 
 /* H3 */
-h3 {
-    font-family: "Montserrat";
-    font-weight: bold;
-}
-
-.header {
-    font-family: 'Montserrat-Black', sans-serif;
-    font-weight: bold;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    line-height: 3.5rem;
-}
-
 /* icons */
 .col-md-4 {
     height: 50%;
     weight: 50%;
-    text-align: center;
 }
+
 
 /* features */
 #features {
-    padding: 7% 15%;
+  
+    position: relative;
+    z-index: 1;
+
 }
 
 .icons {
@@ -96,14 +110,10 @@ h2 {
 
 /* testimonials */
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
+
 
 .testimonials-image {
     width: 15%;
@@ -113,10 +123,37 @@ h2 {
 
 #press {
     background-color: #ef8172;
-    text-align: center;
+
 }
 
 .press-image {
     width: 15%;
     margin: 20px 20px 50px;
+}
+/* Pricing Section */
+#pricing{
+    padding: 100px;
+}
+.pricing-column{
+    padding:3% 2% ;
+}
+/* CTA Secion */
+
+.cta-heading{
+    font-family:"Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
 }
